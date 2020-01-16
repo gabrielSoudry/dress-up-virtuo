@@ -15,9 +15,9 @@ const VIRTUO = (() => { //eslint-disable-line
    */
   const getCar = () => {
     return {
-      'name': document.querySelector('#car .js-name').value,
-      'pricePerDay': document.querySelector('#car .js-price-by-day').value,
-      'pricePerKm': document.querySelector('#car .js-price-by-km').value
+      'name':  document.getElementById("nameCar"), 
+      'pricePerDay':  document.getElementById("pricePerDay").value,
+      'pricePerKm':  document.getElementById("pricePerDay").value
     };
   };
 

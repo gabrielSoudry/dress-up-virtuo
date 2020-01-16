@@ -14,25 +14,25 @@
         </div>
       `;
     }).join('');
-
     div.innerHTML = template;
     fragment.appendChild(div);
     document.querySelector('#actors').innerHTML = '';
     document.querySelector('#actors').appendChild(fragment);
+
   };
 
   const button = document.querySelector('#compute');
 
   button.addEventListener('click', function onClick () {
+    console.log("ici")
     const car = VIRTUO.getCar();
-    const begin = document.querySelector('#rental .js-begin').value;
-    const end = document.querySelector('#rental .js-end').value;
-    const distance = document.querySelector('#rental .js-distance').value;
-    const option = document.querySelector('#rental .js-option').checked;
+    const begin = document.getElementById("date1").value;
+    const end = document.getElementById("date2").value;
+    const distance = document.getElementById("distance").value;
+    const option = document.getElementById("option").value == 'Yes' ? true : false; 
     const actors = VIRTUO.payActors(car, begin, end, distance, option);
-
+    console.log(actors)
     render(actors);
-
     return;
   });
 })();

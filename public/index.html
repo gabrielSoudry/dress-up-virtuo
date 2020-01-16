@@ -1,24 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>CSS/HTML Workshop with govirtuo.com</title>
-  </head>
-  <body>
-    <div id="car">
-      <input class="js-name" type="text" placeholder="Car name"/>
-      <input class="js-price-by-day" type="number" placeholder="Price by day"/>
-      <input class="js-price-by-km" type="number" placeholder="Price by km"/>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Au Register Forms by Colorlib</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+       
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                
+                <div class="card-body">
+                    <h2 class="title">Registration Info</h2>
+                    <form name='write'>
+                    <div class="input-group">
+                            <input class="input--style-3" id="name_car" type="text" placeholder="Car Name" name="name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" id = "pricePerDay" type="text" placeholder="Price by Day" name="name">
+                        </div> 
+                        <div class="input-group">
+                            <input class="input--style-3" id = "pricePerKm" type="text" placeholder="Price by km" name="name">
+                        </div> 
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Driver name" name="name">
+                        </div> 
+                        <div class="input-group">
+                            <input class="input--style-3" id="date1" type="date" placeholder="Pickup Date" name="birthday">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="date" id="date2" placeholder="Return Date" name="birthday">
+                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="option" id = "option">
+                                    <option disabled="disabled" selected="selected">Option </option>
+                                    <option>Yes </option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Distance in km" name="name" id="distance">
+                        </div> 
+                        
+                        <div class="p-t-10">
+                            <button id="compute" class="btn btn--pill btn--green" type="button">Submit</button>
+                        </div> 
+                    </form>
+                    <div id='actors'></div></body>
+
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="rental">
-      <input class="js-name" type="text" placeholder="Driver name"/>
-      <input class="js-begin" type="date" placeholder="Rental begin date"/>
-      <input class="js-end" type="date" placeholder="Rental end date"/>
-      <input class="js-distance" type="number" placeholder="Distance in km"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
     <script src="virtuo.js"></script>
     <script src="index.js"></script>
-  </body>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
 </html>
+<!-- end document-->
